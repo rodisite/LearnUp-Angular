@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mapnote';
+
+  public attributes = {name: 'value1'};
+
+  public onClick() {
+    this.attributes = {name: 'value2'};
+  }
 }
