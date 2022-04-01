@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { AttributeDirective } from './attribute.directive';
 import { FormatNumberPipe } from './format-number.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { FormatNumberPipe } from './format-number.pipe';
     FormatNumberPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
