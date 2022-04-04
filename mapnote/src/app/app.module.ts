@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { DOCUMENT, SET_INTERVAL } from './timer.service'
 import { CardComponent } from './card/card.component';
 import { AttributeDirective } from './attribute.directive';
+import { FormatNumberPipe } from './format-number.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormatNumberPipe } from './format-number.pipe'; 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { FormatNumberPipe } from './format-number.pipe';
     FormatNumberPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     TimerService,

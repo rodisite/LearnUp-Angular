@@ -27,6 +27,40 @@
 </div>
 <br>
 
+<h2>HomeWork-6</h2>
+<div>
+  <form [formGroup]="productFormGroup">
+      <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" formControlName="name">
+      </div>
+
+      <div>
+          <label for="price">Price</label>
+          <input type="number" id="price" formControlName="price">
+      </div>
+
+      <div>
+          <label for="id">Id</label>
+          <input type="text" id="id" formControlName="id" [value]="productFormGroup.value.id">
+          <button type="button" (click)="generateId()">Generate ID</button>
+      </div>
+
+      <div>
+          <label for="categories">Categories</label>
+          <select id="categories" multiple formControlName="categories">
+              <option value="clothes">Clothes</option>
+              <option value="shoes">Shoes</option>
+              <option value="medicines">Medicines</option>
+              <option value="meal">Meal</option>
+              <option value="electronics">Electronics</option>
+          </select>
+      </div>
+
+      <button type="button" (click)="onSubmit()">Submit</button>
+  </form>
+</div>
+
 <h2>HomeWork-5</h2>
 <div>
   <p>Timer</p>
